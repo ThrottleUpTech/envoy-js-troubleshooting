@@ -1,0 +1,7 @@
+name = "envoy-js-troubleshooting"
+type = "webpack"
+usage_model = ''
+compatibility_flags = []
+workers_dev = true
+site = {bucket = "./public",entry-point = "workers-site"}
+compatibility_date = "2022-04-11"

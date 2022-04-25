@@ -1,0 +1,77 @@
+
+.faqListBlock {
+  margin: 15px 0;
+
+  .faqItem {
+    background: #fff;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 2px 0 0 #fff;
+
+    button {
+      font-size: 13px;
+    }
+
+    .accordion-button {
+      padding: 15px 40px 15px 25px;
+      display: block;
+      color: #24414E;
+      text-decoration: none !important;
+      position: relative;
+      cursor: pointer;
+      appearance: none;
+      border:none;
+      background: none;
+      width: 100%;
+      text-align: left;
+
+      &::after {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 20px;
+        width: 9px;
+        height: 9px;
+        border-right: 2px solid #24414E;
+        border-bottom: 2px solid #24414E;
+        content: '';
+        margin: auto;
+        transform: rotate(45deg);
+      }
+    }
+
+    .accordion-content {
+      height: 0;
+      overflow: hidden;
+      transition: height ease-out .3s;
+
+      .inside{
+        padding: 0 25px 20px;
+      }
+
+      p {
+        font-size: 15px;
+        color: #555;
+      }
+
+    }
+
+    &.active {
+
+      .accordion-button{
+          &::after {
+            transform: rotate(225deg);
+          }
+      }
+
+      .accordion-content {
+        border-top: 2px dotted #ddd;
+        transition: height ease-in .3s;
+      }
+
+    }
+
+  }
+}

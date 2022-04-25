@@ -1,0 +1,127 @@
+.gravityform {
+  margin: 15px 0;
+
+  .gform_fields{
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 20px;
+  }
+
+  .gfield{
+    list-style: none;
+    margin-top: 18px;
+    padding-top: 0;
+    width: 100%;
+
+     label {
+      color: #253E4F;
+      display: inline-block;
+      font-size: 15px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+  }
+
+  .gravityform__field__hidden{
+    display: none;
+  }
+
+  .gravityform__field__input__text,
+  .gravityform__field__input__email,
+  .gravityform__field__input__textarea{
+    width: 100%;
+    border: 1px solid #a1a1a1;
+    border-radius: 4px;
+    line-height: 110%;
+  }
+
+  .gravityform__field__input__text,
+  .gravityform__field__input__email {
+    height: 45px;
+  }
+
+  .gfield_radio{
+    padding-left: 15px;
+     label{
+      text-transform: unset;
+       font-size: 16px;
+    }
+  }
+
+  .gfield_html{
+    margin: 20px 0;
+    .gravityform__label{
+      display: none;
+    }
+
+    .ginput_container_html{
+      p{
+        font-size: 16px;
+      }
+      ul{
+        padding-left: 15px;
+        li{
+          color: #253E4F;
+          font-size: 16px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  .gravityform__field__textarea{
+    textarea{
+      min-height: 150px;
+    }
+  }
+.gform_footer{
+  text-align: center;
+}
+.gravityform__button{
+    background: #1b4353;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 8px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .gravityform__error_message{
+    color:#FF0000;
+    font-size: 14px;
+    padding:5px;
+  }
+}
+
+
+
+#gform_wrapper_52{
+  @media(min-width: 768px) {
+    #field_52_9,
+    #field_52_10 {
+      width: calc(50% - 10px);
+    }
+
+    #field_52_12,
+    #field_52_11 {
+      width: calc(50% - 10px);
+    }
+
+    #field_52_13,
+    #field_52_14 {
+      width: calc(50% - 10px);
+    }
+  }
+  .apply-note {
+    border-bottom: 2px solid #a1a1a1;
+    padding-bottom: 25px;
+  }
+
+}

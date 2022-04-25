@@ -1,0 +1,133 @@
+.envoyBenefits{
+  padding: 30px 20px;
+  text-align: center;
+  position: relative;
+  background-color:#d5ecf2;
+
+  // .bgImage{
+  //   height: 100%;
+  //   left: 0;
+  //   position: absolute !important;
+  //   top: 0;
+  //   width: 100%;
+  //   z-index: -1;
+  //   background: #ddd;
+  // }
+
+  h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    line-height: 1.15em;
+  }
+  .benefitBlocks {
+    max-width: 1260px;
+    margin: auto;
+    display: flex;
+    gap: 50px 50px !important;
+    justify-content: space-around;
+
+    .benefitBlock{
+      display: flex;
+      background: #fff;
+      padding: 40px;
+      text-align: left;
+      margin: 120px auto 20px;
+      border-radius: 10px;
+      gap: 0 40px;
+      max-width: 800px;
+      box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.1);
+      border: 1px solid #ccc;
+      flex-direction: column;
+
+      @media (min-width: 700px) {
+        &:nth-child(2n) {
+          // margin-right: -20px;
+          box-shadow: -12px 10px 25px 1px rgba(0, 0, 0, 0.15);
+        }
+      }
+
+      .col-1-3 .gatsby-image-wrapper {
+        margin-top: -100px;
+      }
+
+      .gatsby-image-wrapper {
+        max-width: 240px;
+        margin: auto;
+        border-radius: 20px;
+        box-shadow: 0 8px 30px 5px rgb(253 203 72 / 50%);
+        border: 6px solid #fdcb48;
+      }
+
+      h3 {
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 1.25em;
+        margin: 20px 0 0px;
+      }
+
+    }
+
+    @media (min-width: 800px) and (max-width: 1280px) {
+      &{
+        flex-wrap: wrap;
+        gap: 20px 20px !important;
+        .benefitBlock {
+          flex-basis: 48%;
+          text-align: center;
+        }
+      }
+    }
+
+    @media (max-width: 799px) {
+      & {
+        flex-wrap: wrap;
+        gap: 20px 20px !important;
+        .benefitBlock {
+          flex-basis: 100% !important;
+          text-align: center;
+        }
+      }
+    }
+
+    @media (max-width: 699px) {
+      .benefitBlock {
+        display: block;
+      }
+    }
+
+  }
+
+  .buttonsCTA {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  @media(min-width:1280px) and (max-width:1450px){
+      & .benefitBlocks{
+          flex-wrap:wrap !important;
+          gap:20px !important;
+      }
+
+      & .benefitBlock{
+          flex-basis:45%;
+          text-align:center !important;
+      }
+  }
+
+  @media(min-width:1451px){
+    & .benefitBlocks{
+        flex-wrap:nowrap;
+        gap:20px !important;
+    }
+
+    & .benefitBlock{
+        flex:1;padding-left:30px !important;padding-right:30px !important;font-size:15px !important;
+    }
+}
+
+
+}
